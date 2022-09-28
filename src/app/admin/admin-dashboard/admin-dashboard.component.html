@@ -1,0 +1,27 @@
+<!-- <app-header-login></app-header-login> -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+    <a class="navbar-brand" href="#" style="margin-left: 20px;">
+      <i class="fas fa-film"></i>
+      <b class="ml-3">Admin Dashboard</b>
+    </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <div class="form-inline my-2 my-lg-0">
+            <button routerLink="/admin-dashboard" class="button">Add Movies</button>
+            <button routerLink="/admin-dashboard/add-slot" class="button">Add Shows</button>
+            <button routerLink="/admin-dashboard/add-vehicle" class="button">Add Seating</button>
+            <button routerLink="/admin-dashboard/allbookings" class="button">All Bookings</button>
+            <button (click)="logout()" class="button">Logout</button>
+        </div>
+      </div>
+    </nav>
+<div class="row justify-content-center">
+    <div class="col">
+        <router-outlet></router-outlet>
+    </div>
+</div>
