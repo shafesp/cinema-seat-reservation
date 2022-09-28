@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators, AbstractControl } from '@angular/forms';
-import { UsersService } from 'src/app/services/users.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -18,7 +17,7 @@ export class SignupComponent{
     confPassword : new FormControl('',[Validators.required,this.confirmPasswordCheck])
   })
 
-  constructor(private usersService: UsersService,  public router: Router) { }
+  constructor( public router: Router) { }
 
 
 

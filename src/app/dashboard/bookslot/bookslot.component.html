@@ -57,7 +57,19 @@
                             </div>
                             <!-- end hours    -->
                             <div class="seater">
-                                <ul class="showcase">
+                                <div class="booking-container mt-5">
+                                    <div class="screen"></div>
+                                    <h3 class="screen-text">Your Screen is Here</h3>
+                                    <div class="seat-container">
+                                        <ng-container *ngFor="let seat of seatData">
+                                            <div (click)="addSeat(seat)" class="seat" [ngClass]="{'available':seat.isAvailable === true, 'selected':seat.isSelected === true, 'booked':seat.isAvailable === false}">
+                                                {{seat.seatNumber}}
+                                            </div>
+                                        </ng-container>
+                                    </div>
+                                    <!-- <div class="d-flex justify-content-end mt-3"><button [disabled]="!isSeatSelected" type="button" aria-disabled="true" class="btn btn-primary" (click)="addTickets()">Add Tickets</button></div> -->
+                                </div>
+                                <!-- <ul class="showcase">
                                     <li>
                                       <div class="seat"></div>
                                       <small>N/A</small>
@@ -71,7 +83,6 @@
                                       <small>Occupied</small>
                                     </li>
                                   </ul>
-                              
                                   <div class="container">
                                     <div class="screen"></div>
                               <div class="seating">
@@ -143,7 +154,7 @@
                                       <div class="seat"></div>
                                     </div>
                                   </div>
-                                </div>
+                                </div> -->
                             </div>
 
 
@@ -165,7 +176,7 @@
                                             <input type="reset" class="button" value="Reset">
                                         </div>
                                         <div class="col">
-                                            <button class="button" >Book Show</button>
+                                            <button class="button" (click)="addTickets()">Book Show</button>
                                         </div>
                                     </div>                                    
                                 </div>

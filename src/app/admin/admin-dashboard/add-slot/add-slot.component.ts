@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { SlotsService } from 'src/app/services/slots.service';
-import { Slots } from 'src/app/models/slots.model';
-import { LocationsService } from 'src/app/services/locations.service';
-import { Locations } from 'src/app/models/locations.model';
 
 @Component({
   selector: 'app-add-slot',
@@ -17,7 +13,7 @@ export class AddSlotComponent {
     slotid : new FormControl('', Validators.required),
     slotno : new FormControl('', Validators.required)
   })
-  constructor(private slotService: SlotsService, private locationService : LocationsService) { }
+  constructor() { }
 
   
 }
