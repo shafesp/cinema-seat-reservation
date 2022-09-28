@@ -17,7 +17,7 @@
             <div class="col-md-12">
                 <div class="row mb-3">
                     <div class="col-md-12">
-                        <h4>Movie name: Brahmāstra: Part One – Shiva</h4>
+                        <h4 style="font-weight: bold;">Movie name: Brahmāstra: Part One – Shiva</h4>
                         <form class="card" name="bookingForm">
                             
                             <div class="col-md-12 mt-2 mb-3">
@@ -176,7 +176,7 @@
                                             <input type="reset" class="button" value="Reset">
                                         </div>
                                         <div class="col">
-                                            <button class="button" (click)="addTickets()">Book Show</button>
+                                            <button class="button" [disabled]="!isSeatSelected" (click)="addTickets()">Book Show</button>
                                         </div>
                                     </div>                                    
                                 </div>

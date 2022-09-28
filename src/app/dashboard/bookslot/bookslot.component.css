@@ -32,36 +32,6 @@
     border-bottom: 1px solid #ff4f5a;   
 }
 
-.button-slot{
-    border: none;
-    width: 120px;
-    margin-top: 10px;
-    color: white;
-    height: 35px;
-    background-color: #ff4f5a;
-    font-weight: 900;
-    border-radius: 5px;
-}
-.button-slot:focus{
-    border: none;
-    width: 120px;
-    margin-top: 10px;
-    color: white;
-    height: 35px;
-    background-color: #17a2b8;
-    font-weight: 900;
-    border-radius: 5px;
-}
-.button-slot:disabled{
-    border: none;
-    width: 120px;
-    margin-top: 10px;
-    color: #000;
-    height: 35px;
-    background-color: #b5aeae;
-    font-weight: 900;
-    border-radius: 5px;
-}
 
 input[type="radio"] {
     display: none;

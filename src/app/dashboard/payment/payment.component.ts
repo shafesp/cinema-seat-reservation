@@ -45,7 +45,7 @@ export class PaymentComponent implements OnInit {
     alert(`${this.name} booked ${count} tickets`);
     this.name = '';
     this.phoneNumber = '';
-    this.router.navigate(['/dashboard/bookslot']);
+    this.router.navigate(['/dashboard']);
   }
 
 }
