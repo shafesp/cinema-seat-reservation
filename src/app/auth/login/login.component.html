@@ -43,7 +43,7 @@
                         </div> -->
 
                         <div class="button">
-                            <button  type="submit" class="btn btn-outline-success" routerLink="/dashboard">Login</button>
+                            <button  type="submit" class="btn btn-outline-success" [disabled]="!form.valid" routerLink="/dashboard">Login</button>
                         </div>
                     </form>
                 </div>

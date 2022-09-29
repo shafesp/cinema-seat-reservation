@@ -22,11 +22,11 @@ import { HeaderLoginComponent } from './header-login/header-login.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminLoginComponent } from './admin/admin-login/admin-login.component';
 import { AdminDashboardComponent } from './admin/admin-dashboard/admin-dashboard.component';
-import { AddLocationComponent } from './admin/admin-dashboard/add-location/add-location.component';
 import { AddSlotComponent } from './admin/admin-dashboard/add-slot/add-slot.component';
 import { AllbookingsComponent } from './admin/admin-dashboard/allbookings/allbookings.component';
-import { AddVehicleComponent } from './admin/admin-dashboard/add-vehicle/add-vehicle.component';
 import { PaymentComponent } from './dashboard/payment/payment.component';
+import { AddMovieComponent } from './admin/admin-dashboard/add-movie/add-movie.component';
+import { AddSeatComponent } from './admin/admin-dashboard/add-seat/add-seat.component';
 
 @NgModule({
   declarations: [
@@ -44,11 +44,11 @@ import { PaymentComponent } from './dashboard/payment/payment.component';
     AdminComponent,
     AdminLoginComponent,
     AdminDashboardComponent,
-    AddLocationComponent,
     AddSlotComponent,
     AllbookingsComponent,
-    AddVehicleComponent,
-    PaymentComponent
+    PaymentComponent,
+    AddMovieComponent,
+    AddSeatComponent
   ],
   imports: [
     BrowserModule,

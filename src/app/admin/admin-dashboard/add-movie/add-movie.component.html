@@ -13,7 +13,7 @@
                         <form name="form" [formGroup] = "form" class="card m-2">
                             <div class="col-md-12">
                                 <div class="m-1">
-                                    <input class="input form-control" formControlName="location_name" [ngClass]="{ 'is-invalid':form.get('location_name').touched && form.get('location_name').invalid}" name="location_name" type="text" placeholder="Movie Name"  autocomplete="off" required>
+                                    <input class="input form-control" formControlName="movie_name" [ngClass]="{ 'is-invalid':form.get('movie_name').touched && form.get('movie_name').invalid}" name="movie_name" type="text" placeholder="Movie Name"  autocomplete="off" required>
                                     <div class="invalid-feedback">
                                         <div>
                                             This Field is required!!

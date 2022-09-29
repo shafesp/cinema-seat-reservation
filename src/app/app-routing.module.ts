@@ -10,11 +10,10 @@ import { BookslotComponent } from './dashboard/bookslot/bookslot.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminLoginComponent } from './admin/admin-login/admin-login.component';
 import { AdminDashboardComponent } from './admin/admin-dashboard/admin-dashboard.component';
-import { AddLocationComponent } from './admin/admin-dashboard/add-location/add-location.component';
 import { AddSlotComponent } from './admin/admin-dashboard/add-slot/add-slot.component';
 import { AllbookingsComponent } from './admin/admin-dashboard/allbookings/allbookings.component';
-import { AddVehicleComponent } from './admin/admin-dashboard/add-vehicle/add-vehicle.component';
-
+import { AddSeatComponent } from './admin/admin-dashboard/add-seat/add-seat.component';
+import { AddMovieComponent } from './admin/admin-dashboard/add-movie/add-movie.component';
 import { PaymentComponent } from './dashboard/payment/payment.component';
 
 const routes: Routes = [
@@ -34,10 +33,10 @@ const routes: Routes = [
   ]},
   {path:'admin-dashboard',component: AdminDashboardComponent,
   children:[
-    {path:'',component: AddLocationComponent},
+    {path:'', component: AddMovieComponent},
     {path:'add-slot', component: AddSlotComponent},
     {path:'allbookings', component: AllbookingsComponent},
-    {path: 'add-vehicle', component: AddVehicleComponent}
+    {path: 'add-seat', component: AddSeatComponent}
   ]}
 ];
 
