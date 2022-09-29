@@ -162,7 +162,7 @@ body {
 }
 
 .seat.selected {
-  background-color: #6feaf6;
+  background-color: rgba(40, 167, 69);
 }
 
 .seat.occupied {
@@ -276,7 +276,7 @@ p.text span {
   color: #ffff;
 }
 .booked {
-  background-color: rgba(5, 119, 226, 0.934);
+  background-color: red;
   pointer-events: none;
   color: #ffff;
 }
