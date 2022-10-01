@@ -1,13 +1,6 @@
 <app-header></app-header>
-
-<div class="container">
-    <div class="row h-100">
-        <div class="row d-flex  align-items-center">
-        <div class="col-md-6 my-auto image">
-            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp" alt="random image" width="100%" height="100%">
-        </div>
-        <div class="col-md-6 my-auto">
-            <div class = "container">
+        <div class="main">
+            <div style="width: 25%;margin-top: 10%;">
                 <h1 style="text-align: center; font-weight: bold;">WELCOME</h1>
                 <div class="form">
                     <form name="form" [formGroup] = "form">
@@ -43,12 +36,9 @@
                         </div> -->
 
                         <div class="button">
-                            <button  type="submit" class="btn btn-outline-success" [disabled]="!form.valid" routerLink="/dashboard">Login</button>
+                            <button  type="submit" class="btn btn-success" [disabled]="!form.valid" routerLink="/dashboard">Login</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-        </div>
-    </div>
-</div>

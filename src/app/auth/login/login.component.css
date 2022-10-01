@@ -1,34 +1,20 @@
-
 body{
     font-family: sans-serif;
 }
-.row{
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: justify;
+
+.main{
+    height: 92vh;
+    background-image: url(https://www.123freevectors.com/ezoimgfmt/i2.wp.com/files.123freevectors.com/wp-content/original/140770-purple-and-white-curve-background.jpg?w=800&q=95&ezimgfmt=rs:800x450/rscb2);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
 }
-.image img{
-    height : 500px;
-    background-color: black;
-}
-@media screen and (max-width:768px){
-    .image{
-            display: none;
-    }
-}
-.profile{
-    text-align: center; 
-}
-.profile img{
-    width: 90px;
-    height: 90px;
-    box-shadow: 2px 2px  gray;
-    border-radius: 50%;
-}
+
 .form{
     text-align: center;
     font-size: 25px;
-    position: relative;
 }
 i{
     font-size: 30px;
@@ -53,7 +39,4 @@ i{
 }
 .button{
     clear: both;
-}
-.container{
-    margin-top: 3%;
 }
