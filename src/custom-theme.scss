@@ -12,24 +12,24 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$car-parking-primary: mat-palette($mat-indigo);
-$car-parking-accent: mat-palette($mat-pink, A200, A100, A400);
+$seat-reservation-primary: mat-palette($mat-indigo);
+$seat-reservation-accent: mat-palette($mat-pink, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
-$car-parking-warn: mat-palette($mat-red);
+$seat-reservation-warn: mat-palette($mat-red);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$car-parking-theme: mat-light-theme((
+$seat-reservation-theme: mat-light-theme((
   color: (
-    primary: $car-parking-primary,
-    accent: $car-parking-accent,
-    warn: $car-parking-warn,
+    primary: $seat-reservation-primary,
+    accent: $seat-reservation-accent,
+    warn: $seat-reservation-warn,
   )
 ));
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include angular-material-theme($car-parking-theme);
+@include angular-material-theme($seat-reservation-theme);
 
